@@ -15923,7 +15923,7 @@ async function run() {
     let hasTrigger = body.startsWith(trigger);
 
     if (allowArguments) {
-        let regexRawTrigger = trigger.replace(/\s\*{2}/g, ' [^\\s]+');
+        let regexRawTrigger = trigger.replace(/:\*{2}/g, ' [^\\s]+');
 
         if (prefixOnly) {
             regexRawTrigger = `^${regexRawTrigger}$`;
@@ -15943,11 +15943,11 @@ async function run() {
 
     core.setOutput("triggered", "true");
 
-    if (allowArguments && trigger.includes('**')) {
+    if (allowArguments && trigger.includes(':**')) {
         const args = [];
 
-        const triggerSplit = trigger.split(' ');
-        const bodySplit = body.split(' ');
+        const triggerSplit = trigger.split(':');
+        const bodySplit = body.split(':');
 
         triggerSplit.forEach((part, i) => {
             if (part !== '**') return;
