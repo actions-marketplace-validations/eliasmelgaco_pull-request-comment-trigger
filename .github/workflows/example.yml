@@ -48,7 +48,7 @@ jobs:
       - uses: khan/pull-request-comment-trigger@master
         id: check
         with:
-          trigger: '#deploy on ** environment'
+          trigger: '/deploy:**'
           reaction: rocket
           allow_arguments: true
         env:

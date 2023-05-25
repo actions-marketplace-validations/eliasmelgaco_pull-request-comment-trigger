@@ -11,6 +11,8 @@ Look for a "trigger word" in a pull-request description or comment, so that late
 
 See the upstream pull request [`chore: GitHub upgrades` #46](https://github.com/Khan/pull-request-comment-trigger/pull/46) for more details.
 
+:warning: This action contains changes from [shpingalet007](https://github.com/shpingalet007) on this pull request [`Arguments parsing implementation` #34](https://github.com/Khan/pull-request-comment-trigger/pull/34)
+
 ## Example usage in a workflow
 
 Your workflow needs to listen to the following events:
