@@ -15923,7 +15923,7 @@ async function run() {
     let hasTrigger = body.startsWith(trigger);
 
     if (allowArguments) {
-        let regexRawTrigger = trigger.replace(/:\*{2}/g, ' [^\\s]+');
+        let regexRawTrigger = trigger.replace(/:\*{2}/g, '[^\\s]+');
 
         if (prefixOnly) {
             regexRawTrigger = `^${regexRawTrigger}$`;
