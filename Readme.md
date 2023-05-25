@@ -29,7 +29,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: eliasmelgaco/pull-request-comment-trigger@v1.0.0
+      - uses: eliasmelgaco/pull-request-comment-trigger@v2.0.0
         id: check
         with:
           trigger: '@deploy'
